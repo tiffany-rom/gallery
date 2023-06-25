@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript">  </script>
+</head>
+<body onload="showImg(1); setColors()">
+    <div id="gallery">
+        <div id="carrousel">
+        <!--left arrow-->
+            <img id="left" class="cursor" src="img/leftArrow.png" onclick="swipeImg(-1)" />
+            
+            <div id="imgs">
+                <div class="bigImg">
+                    <p class="nums">1/7</p>
+                    <img src="img/red.png" />
+                </div>
+                <div class="bigImg">
+                    <p class="nums">2/7</p>
+                    <img src="img/yellow.png" />
+                </div>
+                <div class="bigImg">
+                    <p class="nums">3/7</p>
+                    <img src="img/purple.png" />
+                </div>
+                <div class="bigImg">
+                    <p class="nums">4/7</p>
+                    <img src="img/orange.png" />
+                </div>
+                <div class="bigImg">
+                    <p class="nums" id="red">5/7</p>
+                    <img src="img/lightPink.png" />
+                </div>
+                <div class="bigImg">
+                    <p class="nums">6/7</p>
+                    <img src="img/green.png" />
+                </div>
+                <div class="bigImg">
+                    <p class="nums">7/7</p>
+                    <img src="img/lightBlue.png" />
+                </div>
+                <!--caption-->
+                <div>
+                    <span id="caption"></span>
+                </div>
+            </div>
+            
+            <!--right arrow-->
+             <img id="right" class="cursor" src="img/rightArrow.png" onclick="swipeImg(1)" />
+        </div>
+        
+        <!--circles-->
+        <div id="colors">
+            <img class="circles cursor" src="img/redCircle.png" onclick="currentImg(1)" alt="Red"/>
+            <img class="circles cursor" src="img/yellowCircle.png" onclick="currentImg(2)" alt="Yellow"/>
+            <img class="circles cursor" src="img/purpleCircle.png" onclick="currentImg(3)" alt="Purple"/>
+            <img class="circles cursor" src="img/orangeCircle.png" onclick="currentImg(4)" alt="Orange"/>
+            <img class="circles cursor" src="img/lightPinkCircle.png" onclick="currentImg(5)" alt="Light Pink"/>
+            <img class="circles cursor" src="img/greenCircle.png" onclick="currentImg(6)" alt="Green"/>
+            <img class="circles cursor" src="img/lightBlueCircle.png" onclick="currentImg(7)" alt="Light blue"/>
+        </div>
+    </div>
+</body>
+</html>

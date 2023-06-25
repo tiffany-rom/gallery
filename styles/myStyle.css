@@ -1,0 +1,89 @@
+﻿@font-face {
+    font-family: 'Rubik-Light';
+    src: url('../fonts/Rubik-Light.ttf') format('truetype');
+}
+
+body {
+    font-family: Rubik-light;
+    background-color:#EBEBEB;
+}
+
+#gallery {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#carrousel {
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+}
+
+#imgs {
+    display: inherit;
+    flex-direction: column;
+}
+
+.bigImg img {
+    height: 300px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+#right, #left{
+    
+    top: 40%;
+    margin: 50px;
+    height: 60px;
+}
+
+#right:hover, #left:hover{
+    filter:brightness(70%);
+}
+
+#right {
+    right: 0;
+}
+
+.nums {
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-weight:900;
+    margin:0px;
+}
+
+#caption {
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 30px;
+    width: 300px;
+    display: inline-block;
+}
+
+.circles {
+    /*float: left;*/
+    height: 60px;
+    opacity: 0.5;
+}
+
+    .circles:hover {
+        opacity: 1;
+    }
+
+
+.active {
+    height: 70px;
+    opacity: 1;
+}
+
+#colors {
+    display: flex;
+    align-items: center;
+}
+
